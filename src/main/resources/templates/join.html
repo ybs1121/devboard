@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <section>
+        <h1>회원가입</h1>
+    </section>
+
+    <section>
+        <form name = "container" action="/join" method="post">
+            E-mail<br>
+            <input type="text"  name="email" placeholder="Write E-mail">
+            <br>
+            Name<br>
+            <input type="text" name="name" placeholder="Write Name">
+            <br>
+            Password<br>
+            <input type="password" name="password" placeholder="Write Password">
+            <br>
+            Answer Question for Find Password<br>
+            <input type="text" name="findPasswordAnswer" placeholder="졸업한 초등학교를 입력하세요.">
+            <br>
+            <button type="submit" value="제출">회원가입</button>
+       </form>
+    </section>
+<a href="/">돌아가기</a>
+</body>
+</html>
